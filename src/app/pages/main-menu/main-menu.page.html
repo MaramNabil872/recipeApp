@@ -1,0 +1,42 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar style="background: #f0faf3" class="main-toolbar">
+    <ion-title>Welcome to Recipe Bank!</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-header class="ion-no-border">
+  <div class="small-toolbar">
+    <ion-icon
+      ios="menu-outline"
+      md="menu-sharp"
+      name="menu"
+      class="icon"
+    ></ion-icon>
+  </div>
+  <div class="title-toolbar"><strong class="title">Shop </strong> here</div>
+</ion-header>
+<ion-content *ngIf="categories!=null" [fullscreen]="true">
+  <div class="content">
+    <div class="searchbar">
+      <ion-searchbar [(ngModel)]="term"> </ion-searchbar>
+    </div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Choose your food category</ion-card-title>
+        <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let cat of categories" [routerLink]="cat.path">
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" [src]="cat.image" />
+            </ion-thumbnail>
+            <ion-label class="label">{{cat.name}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,42 @@
+
+
+<ion-content>
+<div class="background-pic">
+
+  <div class="background-filter">
+    <ion-toolbar color="translucent">
+      <!-- Back icon -->
+          <ion-buttons slot="start">
+              <ion-back-button defaultHref="home"></ion-back-button>
+          </ion-buttons>
+      </ion-toolbar>
+  <div class="shape">
+  <img src="/assets/images/shape.svg"></div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Welcome!
+      </ion-card-title>
+      <ion-card-subtitle>
+        Time to make some recipes, lets <a herf="#">sign up</a>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item  lines="none">
+      <ion-input [(ngModel)]="email" type="email" placeholder="Email Adress"></ion-input>
+      </ion-item>
+      <ion-item  lines="none">
+        <ion-input [(ngModel)]="password" type="password" placeholder="Password"></ion-input>
+        </ion-item>
+        <a routerLink="/fogot-password">Forget password</a>
+        <div class="bottom-section">
+        <ion-button (click)="signin()" >Sign in</ion-button>
+        <span>Do you have an account? <a routerLink="/sign-up">Sign Up</a></span>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  
+</div> 
+
+</div>
+</ion-content>

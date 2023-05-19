@@ -1,0 +1,39 @@
+<ion-toolbar class="toolbar">
+  <ion-title>Breakfast</ion-title>
+  <!-- Back icon -->
+  <ion-buttons style="color: #807777" slot="start">
+    <ion-back-button defaultHref="main-menu"></ion-back-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content>
+  <div class="searchbar">
+    <ion-searchbar [(ngModel)]="term"> </ion-searchbar>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="card-title"
+        ><i>Brekfast Recipes </i>
+        <ion-button class="btn" routerLink="/input"
+          >Add <br />
+          <ion-icon name="add-circle"></ion-icon>
+        </ion-button>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-card
+          *ngFor="let meal of meals| customFilter: term"
+          class="meal-card"
+        >
+          <img alt="Silhouette of mountains" [src]="meal.image" />
+          <ion-card-header>
+            <ion-card-title>{{meal.Name}}</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content> {{meal.desc}} </ion-card-content>
+        </ion-card>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

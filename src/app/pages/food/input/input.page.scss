@@ -1,0 +1,81 @@
+ion-content{
+    --background:#f0faf3;;
+
+}
+
+.toolbar{
+    --background: #f0faf3;
+    --box-shadow:none;
+
+ 
+}
+
+ion-list{
+
+--height: 300px;
+width: 100%;
+
+}
+
+
+ion-title{
+    --color:  #3f9b99;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+
+
+.label{
+    color: #bd516c;
+    font-family:Franklin Gothic Medium;
+  font-weight:600;
+  
+  }
+
+
+.recipe1{
+    height: 110px;
+}
+
+.recipe{
+    height: 190px;
+}
+
+.input{
+    --padding-bottom: 180px;
+ }
+
+.ing{
+ 
+   --padding-bottom: 100px;
+}
+
+.dis{
+  height:50px;
+}
+
+.dis1{
+    --padding-bottom: 40px;
+}
+
+ion-card{
+    box-shadow: none;
+}
+
+.btn{
+       height:53px;
+    width:247px;
+    font-size: 17px;
+    text-transform:none;
+    --background:#f8e2dd;
+    font-weight: 600;
+    --border-radius:15px !important;
+    color:#bd516c;
+   text-align: center;
+   padding-left: 120px;
+    --box-shadow: none;
+   
+   
+}

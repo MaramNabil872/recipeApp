@@ -1,0 +1,121 @@
+ion-toolbar{
+    --background-color: transparent;
+    --ion-color-base: transparent !important;
+    --opacity: 0;
+    
+}
+
+
+ion-content{
+
+    --ion-background-color:#fff;
+font-family: Arial, Helvetica, sans-serif;
+}
+.background-pic{
+    height: 100vh;
+    width: 100%;
+   background:url(/assets/images/background_pc-signup.png);
+    background-position: 30%;
+    background-repeat: no-repeat;
+background-size: cover;
+}
+.background-filter{
+    height: 100%;
+    width:100%;
+    background: rgba(225,225,225,0.8);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.shape{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+
+    img{
+        opacity: 0.9;
+    }
+}
+ion-card{
+    margin-top: 70px;
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+
+    ion-card-title{
+        color: black;
+        font-size: 30px;
+    }
+    ion-card-subtitle{
+        color:grey;
+        font-size: 13px;
+        font-weight: 400;
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color:#198645;
+            font-size: 15px;
+        }
+    }
+ion-card-content{
+    margin-top: 30px;
+
+    ion-item{
+
+        --ion-item-background:transparent;
+        --border-width:0;
+        --inner-border-width:0;
+        margin-bottom: 15px;
+
+ion-input{
+    width:247px;
+    height: 42px;
+    border-radius: 40px;
+    border:1px solid #198645;
+    font-size: 14px;
+    color:#555b5b;
+    font-weight: 400;
+    --padding-start:30px;
+}
+    }
+
+ a{
+    text-decoration: none;
+    color:#589b3f;
+    font-weight: 300;
+    font-size: 13px;
+ }   
+}
+.bottom-section{
+
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+ion-button{
+    height:53px;
+    width:247px;
+    font-size: 14px;
+    text-transform:none;
+    --background:#198645;
+    font-weight: 300;
+    --border-radius:15px !important;
+    color:#fff;
+}
+span{
+    margin-top: 20px;
+    font-weight: 330;
+    font-size: 13px;
+
+    a{
+        font-weight: 600;
+        color:#589b3f;
+        font-size: 14px;
+    }
+}
+}
+
+}

@@ -1,0 +1,60 @@
+ion-content{
+    --background:#f0faf3;;
+
+}
+
+
+.toolbar{
+    --background: #f0faf3;
+    --box-shadow:none;
+
+ 
+}
+ion-title{
+    --color:  #3f9b99;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+
+ion-searchbar{
+
+    --box-shadow:none;
+    --border-radius: 15px;
+    color: #686767;
+    --background:#ece9e9;
+    padding-top: 10px;
+  
+    
+    
+}
+
+.card-title{
+    --color:  #bd516c;
+    font-family:Franklin Gothic Medium;
+    font-weight: 900;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+
+
+.btn{
+    // height:53px;
+    // width:247px;
+    font-size: 14px;
+    text-transform:none;
+    --background:#f8e2dd;
+    font-weight: 600;
+    --border-radius:15px !important;
+    color:#bd516c;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    --box-shadow: none;
+    text-align: left;
+    padding-left: 220px;
+}
+
+

@@ -1,0 +1,43 @@
+<ion-toolbar class="toolbar">
+  <ion-title>share your recipe!</ion-title>
+  <!-- Back icon -->
+      <ion-buttons style="color: #807777;" slot="start">
+          <ion-back-button defaultHref="main-menu"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+
+<ion-content>
+  <ion-card>
+  <ion-list>
+    <ion-item>
+      <div class="label">
+      <ion-label>Meal Name :</ion-label></div>
+      <ion-input placeholder="Enter text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <div class="label">
+      <ion-label class="dis">Meal Discripton :</ion-label></div>
+      <ion-input class="dis1"placeholder="Enter text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <div class="label">
+      <ion-label class="recipe1" >Meal Ingredients :</ion-label>
+      </div>
+      <ion-input  class="ing" placeholder="Enter text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <div class="label">
+      <ion-label class="recipe" >Meal Recipe :</ion-label>
+      </div>
+      <ion-input class="input" placeholder="Enter text" ></ion-input>
+    </ion-item>
+  </ion-list>
+ 
+</ion-card>
+<ion-button class="btn" routerLink="/breakfast" >
+  Share <ion-icon name="checkmark-sharp"></ion-icon>
+</ion-button>
+</ion-content>
